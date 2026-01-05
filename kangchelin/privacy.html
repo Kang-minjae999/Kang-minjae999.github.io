@@ -2,11 +2,11 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>개인정보 처리방침</title>
+  <title>강슐랭 - 개인정보 처리방침</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', Arial, sans-serif;
       line-height: 1.7;
       padding: 40px;
       background-color: #f9f9f9;
@@ -18,50 +18,113 @@
       text-align: center;
       font-size: 28px;
       margin-bottom: 40px;
+      color: #000;
     }
     h2 {
       font-size: 20px;
       margin-top: 30px;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
+      color: #222;
     }
-    p {
+    h3 {
+      font-size: 17px;
+      margin-top: 20px;
+      color: #444;
+      font-weight: bold;
+    }
+    p, li {
       margin: 10px 0;
+      font-size: 15px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .contact-info {
+      background-color: #f0f0f0;
+      padding: 15px;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    .footer-date {
+      margin-top: 50px;
+      text-align: right;
+      font-weight: bold;
+    }
+    .highlight {
+      color: #0056b3;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
   <h1>개인정보 처리방침</h1>
 
-  <p><strong>강슐랭</strong>은(는) 사용자의 개인정보를 보호하며, 아래와 같은 내용을 명확히 안내드립니다.</p>
+  <section>
+    <h2>계정 삭제 및 탈퇴 방침</h2>
+    <p><strong>강슐랭</strong>은 이용자의 자기결정권을 존중합니다. 앱 내 <strong>[마이페이지 > 계정 비활성화(탈퇴)]</strong>를 완료하시면, 관련 법령에서 정한 보존 기간을 제외한 모든 개인정보는 30일 이내에 자동으로 영구 삭제됩니다.</p>
+  </section>
 
-  <h2>1. 수집하는 개인정보 항목</h2>
-  <p>강슐랭은(는) 이름, 연락처, 위치 정보, 계정 정보 등 직접적인 개인정보를 수집하지 않습니다.</p>
+  <hr style="margin: 40px 0; border: 0; border-top: 1px solid #eee;">
 
-  <h2>2. 개인정보의 수집 및 이용 목적</h2>
-  <p>일부 서비스(광고 등)를 위해 수집되는 비개인정보는 맞춤형 광고 제공 및 앱 품질 향상을 위해 사용됩니다.</p>
+  <section>
+    <p><strong>강슐랭</strong>은(는) 「개인정보 보호법」 제30조에 따라 정보주체의 개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 하기 위하여 다음과 같이 개인정보 처리방침을 수립·공개합니다.</p>
+    <p>○ 이 개인정보처리방침은 <strong>2025년 03월 11일</strong>부터 적용됩니다.</p>
 
-  <h2>3. 제3자 제공 및 위탁</h2>
-  <p>강슐랭은(는) Google AdMob 서비스를 통해 광고를 제공하며, 이 과정에서 제3자인 Google과 그 파트너가 광고 ID 등의 정보를 처리할 수 있습니다.</p>
+    <h3>제1조 (개인정보의 처리 목적)</h3>
+    <p>강슐랭은 다음의 목적을 위하여 개인정보를 처리합니다.</p>
+    <ul>
+      <li><strong>회원 가입 및 관리:</strong> <span class="highlight">Firebase Authentication</span>을 통한 사용자 식별, 가입 의사 확인, 회원자격 유지 및 관리, 부정 이용 방지.</li>
+      <li><strong>서비스 제공:</strong> 맛집 정보 제공, 맞춤형 콘텐츠 추천, 본인 인증.</li>
+      <li><strong>마케팅 및 광고 활용:</strong> 구글 AdMob을 활용한 맞춤형 광고 게재, 접속 빈도 파악 및 서비스 이용 통계 분석.</li>
+    </ul>
 
-  <h2>4. 외부 SDK 및 API 사용</h2>
-  <p>Google AdMob SDK가 포함되어 있으며, 이로 인해 비식별 정보(광고 ID 등)가 수집될 수 있습니다. 자세한 사항은 Google의 <a href="https://policies.google.com/technologies/ads" target="_blank">광고 개인정보처리방침</a>을 참고하세요.</p>
+    <h3>제2조 (처리하는 개인정보의 항목)</h3>
+    <p>강슐랭은 원활한 서비스 제공을 위해 아래 정보를 수집합니다.</p>
+    <ul>
+      <li><strong>필수항목:</strong> 휴대전화번호, 비밀번호(Firebase를 통해 암호화 처리)</li>
+      <li><strong>자동 수집 항목:</strong> ADID/IDFA(광고 식별자), 기기 정보, 서비스 이용 기록, 접속 로그</li>
+      <li><strong>선택항목:</strong> 나이, 성별, 지역, 선호 성향</li>
+    </ul>
 
-  <h2>5. 앱 권한 안내</h2>
-  <p>강슐랭은(는) 기본적인 광고 및 기능 제공을 위한 인터넷 권한을 사용하지만, 위치, 저장소, 연락처 등의 민감한 권한은 요청하지 않습니다.</p>
+    <h3>제3조 (개인정보의 제3자 제공 및 위탁)</h3>
+    <p>강슐랭은 서비스 향상을 위해 아래와 같이 외부 전문 업체에 시스템 운영을 위탁하고 있습니다.</p>
+    <ul>
+      <li><strong>Google Firebase:</strong> 사용자 인증(로그인) 및 데이터베이스 관리 (클라우드 서비스)</li>
+      <li><strong>Google AdMob:</strong> 맞춤형 광고 제공 및 광고 성과 분석</li>
+    </ul>
 
-  <h2>6. 이용자의 권리</h2>
-  <p>사용자는 기기 설정을 통해 맞춤형 광고를 제한하거나 광고 ID 초기화 등의 권리를 행사할 수 있습니다.</p>
+    <h3>제4조 (개인정보의 처리 및 보유 기간)</h3>
+    <p>이용자의 개인정보는 원칙적으로 목적 달성 시 지체 없이 파기합니다. 단, 관련 법령에 따라 아래 기록은 보존됩니다.</p>
+    <ul>
+      <li>계약 또는 청약철회, 대금결제 기록: 5년</li>
+      <li>소비자 불만 또는 분쟁처리 기록: 3년</li>
+      <li>표시/광고에 관한 기록: 6개월</li>
+    </ul>
 
-  <h2>7. 문의처</h2>
-  <p>앱과 관련한 문의는 아래 이메일로 연락 주시기 바랍니다.</p>
-  <p><strong>이메일:</strong> towndev@naver.com</p>
+    <h3>제5조 (개인정보의 파기절차 및 방법)</h3>
+    <p>Firebase 서버 및 내부 DB에 저장된 정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 안전하게 삭제합니다.</p>
 
-  <h2>8. 광고 및 분석 도구</h2>
-  <p>강슐랭은(는) Google AdMob을 사용하여 광고를 제공합니다. 이 과정에서 Google 및 그 파트너는 사용자의 광고 ID를 수집하며, 맞춤형 광고 및 광고 성과 측정을 위해 사용할 수 있습니다.</p>
-  <p>사용자는 Google 광고 설정에서 맞춤형 광고를 제한할 수 있습니다. 자세한 정보는 <a href="https://policies.google.com/technologies/ads" target="_blank">여기</a>에서 확인하실 수 있습니다.</p>
+    <h3>제6조 (개인정보의 안전성 확보조치)</h3>
+    <p>강슐랭은 Firebase의 강력한 보안 인프라를 활용함과 동시에 다음과 같은 조치를 취합니다.</p>
+    <ul>
+      <li><strong>암호화:</strong> 비밀번호 및 주요 데이터의 암호화 저장.</li>
+      <li><strong>접근 제한:</strong> 개인정보 처리 시스템에 대한 접근 권한의 차등 부여 및 관리.</li>
+      <li><strong>로그 관리:</strong> 접속 기록의 위변조 방지를 위한 기록 보관.</li>
+    </ul>
 
-  <h2>9. 앱 투명성 권한(App Tracking Transparency, iOS)</h2>
-  <p>iOS 기기의 경우, Apple의 앱 추적 투명성 정책에 따라 광고 ID 사용 시 사용자 동의를 요구할 수 있습니다. 사용자는 iOS 설정을 통해 언제든지 추적 권한을 변경할 수 있습니다.</p>
+    <h3>제7조 (개인정보 보호책임자)</h3>
+    <div class="contact-info">
+      <p><strong>▶ 개인정보 보호책임자 및 담당부서</strong></p>
+      <p>성명: 강민재 (개발자)</p>
+      <p>연락처: 010-5519-7425</p>
+      <p>이메일: <a href="mailto:towndev@naver.com">towndev@naver.com</a></p>
+    </div>
 
-  <p>본 개인정보 처리방침은 <strong>2025년 04월 04일</strong>부터 시행됩니다.</p>
+    <h3>제8조 (권익침해 구제방법)</h3>
+    <p>이용자는 개인정보침해신고센터(118) 또는 개인정보분쟁조정위원회(1833-6972) 등을 통해 도움을 받을 수 있습니다.</p>
+
+    <p class="footer-date">공고일자: 2025년 03월 11일<br>시행일자: 2025년 03월 11일</p>
+  </section>
 </body>
 </html>
