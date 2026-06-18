@@ -1,115 +1,274 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <title>타운 스튜디오 - 혁신적인 웹/앱 개발 파트너</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css');
+
+    :root {
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --primary-light: #eff6ff;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --bg-page: #f8fafc;
+      --bg-card: #ffffff;
+      --border: #e2e8f0;
+      --accent: #d9534f;
+    }
+
     body {
-      font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', Arial, sans-serif;
-      line-height: 1.7;
-      padding: 40px;
-      background-color: #f9f9f9;
-      color: #333;
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+      line-height: 1.8;
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      margin: 0;
+      padding: 60px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
       max-width: 800px;
-      margin: auto;
+      width: 100%;
+      background: var(--bg-card);
+      padding: 50px 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
     }
+
     h1 {
+      font-size: 30px;
+      font-weight: 800;
       text-align: center;
-      font-size: 28px;
+      margin-bottom: 8px;
+      color: #0f172a;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 15px;
       margin-bottom: 40px;
-      color: #000;
     }
+
     h2 {
-      font-size: 22px;
-      margin-top: 30px;
-      border-bottom: 2px solid #333;
-      padding-bottom: 8px;
-      color: #222;
+      font-size: 20px;
+      font-weight: 700;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color: #0f172a;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 10px;
     }
+
     h3 {
-      font-size: 18px;
+      font-size: 17px;
+      font-weight: 700;
       margin-top: 25px;
-      color: #0056b3;
+      color: var(--primary);
     }
-    p, li {
+
+    p,
+    li {
       margin: 12px 0;
       font-size: 15px;
+      color: #334155;
     }
+
     ul {
       padding-left: 20px;
     }
+
     .highlight {
-      color: #d9534f;
+      color: var(--accent);
       font-weight: bold;
     }
+
     .info-box {
-      background-color: #fff;
+      background-color: #f8fafc;
       padding: 25px;
       border-radius: 12px;
-      border: 1px solid #e1e1e1;
+      border: 1px solid var(--border);
       margin-top: 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
+
     .contact-info {
-      background-color: #f0f4f8;
+      background-color: var(--primary-light);
       padding: 20px;
-      border-radius: 8px;
+      border-radius: 12px;
       margin-top: 15px;
-      border-left: 4px solid #0056b3;
+      border-left: 4px solid var(--primary);
+      border-top: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
     }
+
+    .contact-info a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
     .footer-date {
-      margin-top: 50px;
+      margin-top: 30px;
       text-align: right;
       font-size: 13px;
-      color: #777;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* 사이트맵 / 푸터 링크 섹션 */
+    .sitemap-section {
+      margin-top: 50px;
+      padding-top: 40px;
+      border-top: 1px solid var(--border);
+    }
+
+    .sitemap-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .sitemap-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      max-width: 500px;
+      margin: 0 auto;
+      gap: 30px;
+    }
+
+    .sitemap-column {
+      background-color: #f8fafc;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+
+    .sitemap-column h4 {
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-size: 15px;
+      font-weight: 700;
+      color: #0f172a;
+      border-left: 3px solid var(--primary);
+      padding-left: 8px;
+    }
+
+    .sitemap-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sitemap-list li {
+      margin: 8px 0;
+      font-size: 14px;
+    }
+
+    .sitemap-list a {
+      color: var(--text-main);
+      text-decoration: none;
+      transition: color 0.2s, padding-left 0.2s;
+      display: inline-block;
+    }
+
+    .sitemap-list a:hover {
+      color: var(--primary);
+      padding-left: 4px;
+      font-weight: 600;
     }
   </style>
 </head>
+
 <body>
-  <h1>타운 스튜디오 안내</h1>
+  <div class="container">
+    <h1>타운 스튜디오 안내</h1>
+    <div class="subtitle">TOWN STUDIO - 혁신적인 웹/앱 개발 파트너</div>
 
-  <section>
-    <h2>회사 소개</h2>
-    <div class="info-box">
-      <p><strong>타운 스튜디오(TOWN STUDIO)</strong>는 최신 기술을 바탕으로 고객의 아이디어를 현실로 만드는 <strong>웹 및 앱 전문 개발 그룹</strong>입니다.</p>
-      
-      <h3>🚀 우리의 경쟁력</h3>
+    <section>
+      <h2>회사 소개</h2>
+      <div class="info-box">
+        <p><strong>타운 스튜디오(TOWN STUDIO)</strong>는 최신 기술을 바탕으로 고객의 아이디어를 현실로 만드는 <strong>웹 및 앱 전문 개발 그룹</strong>입니다.</p>
+
+        <h3>🚀 우리의 경쟁력</h3>
+        <ul>
+          <li><strong>AI 기반 고효율 개발:</strong> 최첨단 AI 자동화 툴을 개발 프로세스 전반에 도입하여, 기존 방식 대비 개발 기간을 혁신적으로 단축합니다.</li>
+          <li><strong>압도적인 가성비:</strong> 불필요한 운영 오버헤드를 줄이고 AI를 적극 활용하여, 개인 사업자부터 스타트업까지 부담 없는 <span
+              class="highlight">합리적이고 저렴한 비용</span>으로 고품질 결과물을 제공합니다.</li>
+          <li><strong>사용자 중심 설계:</strong> 단순히 기능 구현에 그치지 않고, 사용자가 다시 찾고 싶은 직관적인 UI/UX를 고민합니다.</li>
+        </ul>
+
+        <p>저희는 고객의 성장이 곧 타운 스튜디오의 성장이라는 믿음으로, 가장 효율적인 기술적 해답을 제시해 드립니다.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>계정 및 개인정보 관리</h2>
+      <p>타운 스튜디오가 서비스하는 모든 <strong>앱 및 웹</strong> 서비스는 이용자의 권리를 존중합니다.</p>
+      <p><strong>계정 삭제 안내:</strong> 계정이 필요한 웹 및 앱의 경우 내부의 [마이페이지] 하단의 '비활성화'를 완료하시면, 30일 이내에 해당 계정과 관련된 모든 정보가 복구 불가능한
+        상태로 자동 파기됩니다.</p>
+
+      <h3>제1조 (개인정보의 처리 목적)</h3>
+      <p>본 업체는 다음의 목적을 위해 최소한의 개인정보를 처리합니다.</p>
       <ul>
-        <li><strong>AI 기반 고효율 개발:</strong> 최첨단 AI 자동화 툴을 개발 프로세스 전반에 도입하여, 기존 방식 대비 개발 기간을 혁신적으로 단축합니다.</li>
-        <li><strong>압도적인 가성비:</strong> 불필요한 운영 오버헤드를 줄이고 AI를 적극 활용하여, 개인 사업자부터 스타트업까지 부담 없는 <span class="highlight">합리적이고 저렴한 비용</span>으로 고품질 결과물을 제공합니다.</li>
-        <li><strong>사용자 중심 설계:</strong> 단순히 기능 구현에 그치지 않고, 사용자가 다시 찾고 싶은 직관적인 UI/UX를 고민합니다.</li>
+        <li>회원가입 확인 및 본인 식별</li>
+        <li>서비스 제공 및 맞춤형 콘텐츠 추천</li>
+        <li>민원 처리 및 고지사항 전달</li>
+        <li>AI 분석을 통한 서비스 유효성 확인 및 품질 향상</li>
       </ul>
-      
-      <p>저희는 고객의 성장이 곧 타운 스튜디오의 성장이라는 믿음으로, 가장 효율적인 기술적 해답을 제시해 드립니다.</p>
-    </div>
-  </section>
 
-  <hr style="margin: 50px 0; border: 0; border-top: 1px solid #eee;">
+      <h3>제2조 (개인정보 보호책임자)</h3>
+      <div class="contact-info">
+        <p>서비스 이용 중 발생하는 불편사항이나 개인정보 관련 문의는 아래 전담 창구로 연락 주시면 신속히 답변드리겠습니다.</p>
+        <p><strong>성명:</strong> 강민재 (대표 개발자)</p>
+        <p><strong>연락처:</strong> 010-5519-7425</p>
+        <p><strong>이메일:</strong> <a href="mailto:towndev@naver.com">towndev@naver.com</a></p>
+      </div>
 
-  <section>
-    <h2>계정 및 개인정보 관리</h2>
-    <p>타운 스튜디오가 서비스하는 모든 <strong>앱 및 웹</strong> 서비스는 이용자의 권리를 존중합니다.</p>
-    <p><strong>계정 삭제 안내:</strong> 계정이 필요한 웹 및 앱의 경우 내부의 [마이페이지] 하단의 '비활성화'를 완료하시면, 30일 이내에 해당 계정과 관련된 모든 정보가 복구 불가능한 상태로 자동 파기됩니다.</p>
+      <p class="footer-date">공고일자: 2025년 03월 11일<br>최종 수정일자: 2026년 06월 18일</p>
+    </section>
 
-    <h3>제1조 (개인정보의 처리 목적)</h3>
-    <p>본 업체는 다음의 목적을 위해 최소한의 개인정보를 처리합니다.</p>
-    <ul>
-      <li>회원가입 확인 및 본인 식별</li>
-      <li>서비스 제공 및 맞춤형 콘텐츠 추천</li>
-      <li>민원 처리 및 고지사항 전달</li>
-      <li>AI 분석을 통한 서비스 유효성 확인 및 품질 향상</li>
-    </ul>
+    <!-- 사이트맵 / 하단 링크 영역 추가 -->
+    <section class="sitemap-section">
+      <div class="sitemap-title">타운 스튜디오 사이트 맵</div>
+      <div class="sitemap-grid">
 
-    <h3>제2조 (개인정보 보호책임자)</h3>
-    <div class="contact-info">
-      <p>서비스 이용 중 발생하는 불편사항이나 개인정보 관련 문의는 아래 전담 창구로 연락 주시면 신속히 답변드리겠습니다.</p>
-      <p><strong>성명:</strong> 강민재 (대표 개발자)</p>
-      <p><strong>연락처:</strong> 010-5519-7425</p>
-      <p><strong>이메일:</strong> <a href="mailto:towndev@naver.com">towndev@naver.com</a></p>
-    </div>
+        <!-- 서비스 및 프로젝트 컬럼 -->
+        <div class="sitemap-column">
+          <h4>제공 서비스 & 프로젝트</h4>
+          <ul class="sitemap-list">
+            <li><a>타운 스튜디오 (Town Studio)</a></li>
+            <li><a href="./townstudio/privacy.html">타운 스튜디오 개인정보 처리방침</a></li>
+            <li><a href="./townstudio/payment.html">타운 스튜디오 서비스 환불 규정</a></li>
+            <li><a href="./basekana/privacy.html">베이스카나 (Basekana)</a></li>
+            <li><a href="./freeword/privacy.html">영차영차영단어 (FreeWord)</a></li>
+            <li><a href="./kangchelin/privacy.html">강슐랭 (Kangchelin)</a></li>
+            <li><a href="./leftright/privacy.html">좌우 (LeftRight)</a></li>
+            <li><a href="./nevermind/privacy.html">해피웨일 (HappyWhale)</a></li>
+            <li><a href="./rsp/privacy.html">가위바위보 게임 (RSP)</a></li>
+            <li><a href="./vita/privacy.html">비타 (Vita)</a></li>
+          </ul>
+        </div>
 
-    <p class="footer-date">공고일자: 2025년 03월 11일<br>최종 수정일자: 2026년 01월 05일</p>
-  </section>
+
+      </div>
+    </section>
+  </div>
 </body>
+
 </html>
