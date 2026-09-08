@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+<!-- open /Users/macbookpro/Desktop/web/Kang-minjae999.github.io/index.html -->
 
 <head>
   <meta charset="UTF-8">
@@ -146,10 +147,10 @@
 
     .sitemap-grid {
       display: grid;
-      grid-template-columns: 1fr;
-      max-width: 500px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      max-width: 100%;
       margin: 0 auto;
-      gap: 30px;
+      gap: 20px;
     }
 
     .sitemap-column {
@@ -200,7 +201,7 @@
     <h1>타운 스튜디오 안내</h1>
     <div class="subtitle">TOWN STUDIO - 혁신적인 웹/앱 개발 파트너</div>
 
-    <section>
+    <!-- <section>
       <h2>회사 소개</h2>
       <div class="info-box">
         <p><strong>타운 스튜디오(TOWN STUDIO)</strong>는 최신 기술을 바탕으로 고객의 아이디어를 현실로 만드는 <strong>웹 및 앱 전문 개발 그룹</strong>입니다.</p>
@@ -215,7 +216,7 @@
 
         <p>저희는 고객의 성장이 곧 타운 스튜디오의 성장이라는 믿음으로, 가장 효율적인 기술적 해답을 제시해 드립니다.</p>
       </div>
-    </section>
+    </section> -->
 
     <section>
       <h2>계정 및 개인정보 관리</h2>
@@ -244,28 +245,44 @@
       <p class="footer-date">공고일자: 2025년 03월 11일<br>최종 수정일자: 2026년 06월 18일</p>
     </section>
 
-    <!-- 사이트맵 / 하단 링크 영역 추가 -->
+    <!-- 사이트맵 / 하단 링크 영역 -->
     <section class="sitemap-section">
       <div class="sitemap-title">타운 스튜디오 사이트 맵</div>
       <div class="sitemap-grid">
 
-        <!-- 서비스 및 프로젝트 컬럼 -->
+        <!-- 컬럼 1: 플랫폼 & 비즈니스 서비스 -->
         <div class="sitemap-column">
-          <h4>제공 서비스 & 프로젝트</h4>
+          <h4>플랫폼 & 비즈니스 서비스</h4>
           <ul class="sitemap-list">
-            <li><a>타운 스튜디오 (Town Studio)</a></li>
+            <li><a href="./townstudio/index.html">타운 스튜디오 (Town Studio)</a></li>
             <li><a href="./townstudio/privacy.html">타운 스튜디오 개인정보 처리방침</a></li>
             <li><a href="./townstudio/payment.html">타운 스튜디오 서비스 환불 규정</a></li>
-            <li><a href="./basekana/privacy.html">베이스카나 (Basekana)</a></li>
-            <li><a href="./freeword/privacy.html">영차영차영단어 (FreeWord)</a></li>
-            <li><a href="./kangchelin/privacy.html">강슐랭 (Kangchelin)</a></li>
-            <li><a href="./leftright/privacy.html">좌우 (LeftRight)</a></li>
-            <li><a href="./nevermind/privacy.html">해피웨일 (HappyWhale)</a></li>
-            <li><a href="./rsp/privacy.html">가위바위보 게임 (RSP)</a></li>
-            <li><a href="./vita/privacy.html">비타 (Vita)</a></li>
+            <li><a href="./ridertown/privacy.html">라이더타운 (RiderTown) 개인정보 처리방침</a></li>
+            <li><a href="./tiderrown/privacy.html">라이더타운 (TiderRown) 개인정보 처리방침</a></li>
+            <li><a href="./alarmad/user/privacy.html">얼리버드 (AlarmAd) 개인정보 처리방침</a></li>
+            <li><a href="./alarmad/user/refund.html">얼리버드 (AlarmAd) 환불 규정</a></li>
+            <li><a href="./alarmad/company/privacy.html">얼리버드 파트너 (AlarmAd) 개인정보 처리방침</a></li>
+            <li><a href="./alarmad/company/refund.html">얼리버드 파트너 (AlarmAd) 환불 규정</a></li>
+            <li><a href="./butter/privacy.html">버터마켓 (Butter) 개인정보 처리방침</a></li>
+            <li><a href="./travellog/privacy.html">저스트트립 (TravelLog) 개인정보 처리방침</a></li>
           </ul>
         </div>
 
+        <!-- 컬럼 2: 모바일 앱 & 웹 서비스 -->
+        <div class="sitemap-column">
+          <h4>모바일 앱 & 유틸리티</h4>
+          <ul class="sitemap-list">
+            <li><a href="./kangchelin/privacy.html">강슐랭 (Kangchelin) 개인정보 처리방침</a></li>
+            <li><a href="./birthnoticy/privacy.html">까먹었데이 (BirthNoticy) 개인정보 처리방침</a></li>
+            <li><a href="./basekana/privacy.html">베이스카나 (Basekana) 개인정보 처리방침</a></li>
+            <li><a href="./freekana/privacy.html">프리카나 (FreeKana) 개인정보 처리방침</a></li>
+            <li><a href="./freeword/privacy.html">영차영차영단어 (FreeWord) 개인정보 처리방침</a></li>
+            <li><a href="./vita/privacy.html">비타 (Vita) 개인정보 처리방침</a></li>
+            <li><a href="./leftright/privacy.html">좌우 (LeftRight) 개인정보 처리방침</a></li>
+            <li><a href="./nevermind/privacy.html">해피웨일 (HappyWhale) 개인정보 처리방침</a></li>
+            <li><a href="./rsp/privacy.html">가위바위보 게임 (RSP) 개인정보 처리방침</a></li>
+          </ul>
+        </div>
 
       </div>
     </section>
